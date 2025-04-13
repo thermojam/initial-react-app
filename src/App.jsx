@@ -1,26 +1,19 @@
-import {useState} from 'react'
-import './App.css'
+import React from 'react';
+import './App.css';
+
+import JustifiedExample from "./Components/navbar.jsx";
+import IndividualIntervalsExample from "./Components/carousel.jsx"
 
 export const App = () => {
-    const [count, setCount] = useState(0)
-    const currentYear = new Date().getFullYear() // императивный подход
 
     return (
-        <>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}> {/*императивный подход*/}
-                    count is {count}
-                </button>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
-            <footer>
-                <p>Current Year: {currentYear}</p> {/*декларативный подход*/}
-            </footer>
-        </>
+        <div>
+            <JustifiedExample/>
+            <IndividualIntervalsExample/>
+        </div>
+
     )
-}
+
+};
 
 

@@ -1,0 +1,17 @@
+
+.nav-link {
+    color: #ffffff; /* Цвет текста для ссылок */
+    font-size: 20px;
+}
+
+@media  (max-width: 350px) {
+    .nav-link {
+        color: #1533c7; /* Цвет текста для ссылок */
+        font-size: 12px;
+    }
+
+}
+
+.nav {
+    margin-top: 20px;
+}
